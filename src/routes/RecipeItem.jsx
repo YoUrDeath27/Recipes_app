@@ -1,23 +1,17 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Recipe = ({ recipe }) => {
-
-  const handleClick = () => {
-    // Navigate to the details page for the selected recipe
-    history.push(`/recipe/${recipe.top_name}`);
-  };
-
+const RecipeItem = ({ recipe }) => {
   return (
     <>
-      <NavLink to={`/recipes/${recipe.top_name}`} className={({ isActive, isPending }) =>
+      <NavLink to={`/recipe/${recipe.top_name}`} className={({ isActive, isPending }) =>
         isActive
           ? "active"
           : isPending
             ? "pending"
             : ""
       }>
-        <li className='recipe' onClick={handleClick}>
+        <li className='recipe'>
           <section className='name'> {recipe.name}</section> <br />
           <img src={recipe.image} alt={recipe.alt} />
         </li>
@@ -27,4 +21,4 @@ const Recipe = ({ recipe }) => {
   );
 };
 
-export default Recipe;
+export default RecipeItem;

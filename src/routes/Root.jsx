@@ -1,29 +1,34 @@
-import { Form } from "react-router-dom";
-import { useState } from "react";
+// Root.js
+import React, { useState } from 'react';
+import { Form } from 'react-router-dom';
 import RecipesList from './RecipesList';
-import Recipes from "./Recipes";
+import Recipes from './Recipes';
 
 const Root = () => {
-  const [datas, setDatas] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleSubmit = (e) => {
-    const value = e.target.value;
-    
-    setDatas(value);
-    console.log(datas + ' data');
+    e.preventDefault(); // Prevent default form submission behavior
+    const { value } = e.target.search;
+    setSearchTerm(value);
   };
+
+  // Filter recipes based on search term
+  const filteredRecipes = Recipes.filter(recipe =>
+    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <>
-    <nav>
-      <Form > 
-        <input type="text" name='search' onChange={handleSubmit}/>
-      </Form>
-    </nav>
-    <main>
-      <RecipesList recipesData={Recipes} />
-      {/* using this make the searching recipes part */}
-    </main>
+      <nav>
+        <Form onSubmit={handleSubmit}> {/* Handle form submission */}
+          <input type="text" name='search' />
+          <button type="submit">Search</button>
+        </Form>
+      </nav>
+      <main>
+        <RecipesList recipesData={filteredRecipes} /> {/* Pass filtered recipes */}
+      </main>
     </>
   );
 };

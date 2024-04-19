@@ -1,11 +1,11 @@
 import React from 'react'
-import Recipe from './RecipeItem'
+import RecipeItem from './RecipeItem'
 
 const RecipesList = ({recipesData}) => {
   return (
     <ul>
         {recipesData.map(recipe => (
-            <Recipe key={recipe.id} recipe={recipe} />
+            <RecipeItem key={recipe.id} recipe={recipe} />
         ))}
     </ul>
   )

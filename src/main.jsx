@@ -20,9 +20,8 @@ const router = createBrowserRouter([
       {
         errorElement: <ErrorPage />,
         children: [
-          // { index: true, element: <Index /> },
           {
-            path: "recipe/:recipeName",
+            path: "/recipe/:recipeName",
             element: <Recipe />
           }
         ],
