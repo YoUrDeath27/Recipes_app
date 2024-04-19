@@ -1,7 +1,14 @@
 // recipes.js
 import Carbonara from '../assets/img/Spaghetti_Carbonara.jpg'
 import Alfredo from '../assets/img/Chicken_Alfredo_Pasta.jpg'
-
+import Margherita from '../assets/img/Margherita_Pizza.jpg';
+import Beef from '../assets/img/Classic_Beef_Lasagna.jpg';
+import Tikka from '../assets/img/Chicken_Tikka_Masala.jpg';
+import Chili from '../assets/img/Vegetarian_Chili.jpg';
+import Risotto from '../assets/img/Mushroom_Risotto.jpg';
+import Stir from '../assets/img/Beef_Stir_Fry.jpg';
+import Sushi from '../assets/img/Homemade_Sushi_Rolls.jpg';
+import Tiramisu from '../assets/img/Classic_Tiramisu.jpg';
 const Recipes = [
     {
         "id": 1,
@@ -46,6 +53,8 @@ const Recipes = [
       {
         "id": 3,
         "name": "Margherita Pizza",
+        "image" : Margherita,
+        "alt": "Margherita Pizza image",
         "ingredients": [
           { "name": "Pizza dough", "quantity": "400g" },
           { "name": "Tomatoes", "quantity": "3 medium" },
@@ -64,6 +73,8 @@ const Recipes = [
       {
         "id": 4,
         "name": "Classic Beef Lasagna",
+        "image" : Beef,
+        "alt": "Classic Beef Lasagna image",
         "ingredients": [
           { "name": "Lasagna noodles", "quantity": "250g" },
           { "name": "Ground beef", "quantity": "500g" },
@@ -92,6 +103,8 @@ const Recipes = [
       {
         "id": 5,
         "name": "Chicken Tikka Masala",
+        "image" : Tikka,
+        "alt": "Chicken Tikka Masala image",
         "ingredients": [
           { "name": "Chicken thighs", "quantity": "600g" },
           { "name": "Plain yogurt", "quantity": "200g" },
@@ -122,6 +135,8 @@ const Recipes = [
       {
         "id": 6,
         "name": "Vegetarian Chili",
+        "image" : Chili,
+        "alt": "Vegetarian Chili image",
         "ingredients": [
           { "name": "Kidney beans", "quantity": "400g can" },
           { "name": "Black beans", "quantity": "400g can" },
@@ -152,6 +167,8 @@ const Recipes = [
       {
         "id": 7,
         "name": "Mushroom Risotto",
+        "image" : Risotto,
+        "alt": "Mushroom Risotto image",
         "ingredients": [
           { "name": "Arborio rice", "quantity": "300g" },
           { "name": "Mushrooms", "quantity": "250g" },
@@ -179,6 +196,8 @@ const Recipes = [
       {
         "id": 8,
         "name": "Beef Stir Fry",
+        "image" : Stir,
+        "alt": "Beef Stir Fry image",
         "ingredients": [
           { "name": "Beef sirloin", "quantity": "500g" },
           { "name": "Broccoli", "quantity": "1 head" },
@@ -205,6 +224,8 @@ const Recipes = [
       {
         "id": 9,
         "name": "Homemade Sushi Rolls",
+        "image" : Sushi,
+        "alt": "Homemade Sushi Rolls image",
         "ingredients": [
           { "name": "Sushi rice", "quantity": "2 cups" },
           { "name": "Nori sheets", "quantity": "5" },
@@ -228,6 +249,8 @@ const Recipes = [
       {
         "id": 10,
         "name": "Classic Tiramisu",
+        "image" : Tiramisu,
+        "alt": "Classic Tiramisu image",
         "ingredients": [
           { "name": "Ladyfingers", "quantity": "200g" },
           { "name": "Espresso coffee", "quantity": "1 cup" },
