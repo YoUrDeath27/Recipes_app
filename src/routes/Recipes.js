@@ -13,6 +13,7 @@ const Recipes = [
     {
         "id": 1,
         "name": "Spaghetti Carbonara",
+        "top_name": "Spaghetti_Carbonara",
         "image": Carbonara,
         "alt": "Spaghetti Carbonara image",
         "ingredients": [
@@ -33,6 +34,7 @@ const Recipes = [
       {
         "id": 2,
         "name": "Chicken Alfredo Pasta",
+        "top_name": "Chicken_Alfredo_Pasta",
         "image": Alfredo,
         "alt" : 'Chicken Alfredo Pasta image',
         "ingredients": [
@@ -53,6 +55,7 @@ const Recipes = [
       {
         "id": 3,
         "name": "Margherita Pizza",
+        "top_name": "Margherita_Pizza",
         "image" : Margherita,
         "alt": "Margherita Pizza image",
         "ingredients": [
@@ -73,6 +76,7 @@ const Recipes = [
       {
         "id": 4,
         "name": "Classic Beef Lasagna",
+        "top_name": "Classic_Beef_Lasagna",
         "image" : Beef,
         "alt": "Classic Beef Lasagna image",
         "ingredients": [
@@ -103,6 +107,7 @@ const Recipes = [
       {
         "id": 5,
         "name": "Chicken Tikka Masala",
+        "top_name": "Chicken_Tikka_Masala",
         "image" : Tikka,
         "alt": "Chicken Tikka Masala image",
         "ingredients": [
@@ -135,6 +140,7 @@ const Recipes = [
       {
         "id": 6,
         "name": "Vegetarian Chili",
+        "top_name": "Vegetarian_Chili",
         "image" : Chili,
         "alt": "Vegetarian Chili image",
         "ingredients": [
@@ -167,6 +173,7 @@ const Recipes = [
       {
         "id": 7,
         "name": "Mushroom Risotto",
+        "top_name": "Mushroom_Risotto",
         "image" : Risotto,
         "alt": "Mushroom Risotto image",
         "ingredients": [
@@ -196,6 +203,7 @@ const Recipes = [
       {
         "id": 8,
         "name": "Beef Stir Fry",
+        "top_name": "Beef_Stir_Fry",
         "image" : Stir,
         "alt": "Beef Stir Fry image",
         "ingredients": [
@@ -224,6 +232,7 @@ const Recipes = [
       {
         "id": 9,
         "name": "Homemade Sushi Rolls",
+        "top_name" : "Homemade_Sushi_Rolls",
         "image" : Sushi,
         "alt": "Homemade Sushi Rolls image",
         "ingredients": [
@@ -249,6 +258,7 @@ const Recipes = [
       {
         "id": 10,
         "name": "Classic Tiramisu",
+        "top_name": "Classic_Tiramisu",
         "image" : Tiramisu,
         "alt": "Classic Tiramisu image",
         "ingredients": [

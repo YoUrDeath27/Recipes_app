@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import './index.css';
 import ErrorPage from './error-page';
+import Recipe from './routes/Recipe';
 
 import Root from "./routes/Root";
 
@@ -18,26 +19,13 @@ const router = createBrowserRouter([
     children: [
       {
         errorElement: <ErrorPage />,
-        // children: [
-        //   { index: true, element: <Index /> },
-        //   {
-        //     path: "contacts/:contactId",
-        //     element: <Contact />,
-        //     loader: contactLoader,
-        //     action: contactAction,
-        //   },
-        //   {
-        //     path: "contacts/:contactId/edit",
-        //     element: <EditContact />,
-        //     loader: contactLoader,
-        //     action: editAction,
-        //   },
-        //   {
-        //     path: "contacts/:contactId/destroy",
-        //     action: destroyAction,
-        //     errorElement: <div>Oops! There was an error.</div>,
-        //   },
-        // ],
+        children: [
+          // { index: true, element: <Index /> },
+          {
+            path: "recipe/:recipeName",
+            element: <Recipe />
+          }
+        ],
       },
     ],
   },

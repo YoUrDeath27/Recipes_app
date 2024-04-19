@@ -1,14 +1,10 @@
 import React from 'react'
 
-const Recipe = ({recipe}) => {
+const Recipe = () => {
   return (
-    <>
-        <li className='recipe'>
-            <section className='name'> {recipe.name}</section> <br />
-            <img src={recipe.image} alt={recipe.alt}  />
-        </li>
-        <br />
-    </>
+    <div>
+        This is where each recipe will be
+    </div>
   )
 }
 
