@@ -5,7 +5,7 @@ const RecipesList = ({recipesData}) => {
   return (
     <ul>
         {recipesData.map(recipe => (
-            <Recipe recipe={recipe} />
+            <Recipe key={recipe.id} recipe={recipe} />
         ))}
     </ul>
   )

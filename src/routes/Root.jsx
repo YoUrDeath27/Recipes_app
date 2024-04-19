@@ -16,7 +16,7 @@ const Root = () => {
   return (
     <>
     <nav>
-      <Form> 
+      <Form > 
         <input type="text" name='search' onChange={handleSubmit}/>
       </Form>
     </nav>

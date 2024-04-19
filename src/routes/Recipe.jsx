@@ -3,9 +3,9 @@ import React from 'react'
 const Recipe = ({recipe}) => {
   return (
     <>
-        <li>
+        <li className='recipe'>
             <section className='name'> {recipe.name}</section> <br />
-            <img src={recipe.image} alt={recipe.name}  />
+            <img src={recipe.image} alt={recipe.alt}  />
         </li>
         <br />
     </>

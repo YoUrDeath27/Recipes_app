@@ -1,8 +1,13 @@
 // recipes.js
+import Carbonara from '../assets/img/Spaghetti_Carbonara.jpg'
+import Alfredo from '../assets/img/Chicken_Alfredo_Pasta.jpg'
+
 const Recipes = [
     {
         "id": 1,
         "name": "Spaghetti Carbonara",
+        "image": Carbonara,
+        "alt": "Spaghetti Carbonara image",
         "ingredients": [
           { "name": "Spaghetti", "quantity": "200g" },
           { "name": "Pancetta or guanciale", "quantity": "100g" },
@@ -21,6 +26,8 @@ const Recipes = [
       {
         "id": 2,
         "name": "Chicken Alfredo Pasta",
+        "image": Alfredo,
+        "alt" : 'Chicken Alfredo Pasta image',
         "ingredients": [
           { "name": "Fettuccine pasta", "quantity": "250g" },
           { "name": "Chicken breast", "quantity": "300g" },
