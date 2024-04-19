@@ -7,9 +7,8 @@ import Recipes from './Recipes';
 const Root = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-    const { value } = e.target.search;
+  const handleChange = (e) => {
+    const { value } = e.target;
     setSearchTerm(value);
   };
 
@@ -21,9 +20,8 @@ const Root = () => {
   return (
     <>
       <nav>
-        <Form onSubmit={handleSubmit}> {/* Handle form submission */}
-          <input type="text" name='search' />
-          <button type="submit">Search</button>
+        <Form > {/* Handle form submission */}
+          <input type="text" name='search' onChange={handleChange} />
         </Form>
       </nav>
       <main>
