@@ -1,13 +1,20 @@
 import React from 'react'
 import RecipeItem from './RecipeItem'
+import Search from './Search'; 
+import Recipes from './Recipes';
 
-const RecipesList = ({recipesData}) => {
+const RecipesList = () => {
   return (
-    <ul>
-        {recipesData.map(recipe => (
-            <RecipeItem key={recipe.id} recipe={recipe} />
-        ))}
-    </ul>
+    <>
+      <Search/>
+      <main className='recipeList'>
+        <ul>
+            {Recipes.map(recipe => (
+                <RecipeItem key={recipe.id} recipe={recipe} />
+            ))}
+        </ul>
+      </main>
+    </>
   )
 }
 
