@@ -22,11 +22,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     
     children: [
       {
-        // errorElement: <ErrorPage />,
+        errorElement: <ErrorPage />,
         children: [
           { index: true, element: <RecipesList recipesData={filteredRecipes} /> },
           {
