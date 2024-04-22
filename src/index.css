@@ -9,6 +9,8 @@ body{
   justify-content: center;
   height:10vh;
   align-items: center;
+  width: 10vw;
+  margin: 0 auto;
 }
 
 main.recipeList{
@@ -23,6 +25,7 @@ ul{
   width:100vw;
   display:inline-flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 .recipe{
@@ -34,6 +37,7 @@ ul{
   align-items: center;
   padding:20px;
   border-radius: 30px;
+  transition: all .1s;
 }
 .recipe:hover{
   background-color:#d1d1d160;
@@ -66,7 +70,7 @@ main.recipePage{
 
 main.recipePage .name{
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1vw;
 }
 
 .recipePage img{
@@ -110,4 +114,76 @@ main.recipePage .name{
 .recipePage li{
   display:list-item;
   text-align: left;
+}
+
+
+@media screen and (min-width:1000px){
+  .recipe{
+    list-style: none;
+    margin: 7.6vw;
+    width:30vw;
+    transition: all 1s;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px;
+    border-radius: 30px;
+  }
+
+  .recipeList ul {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .recipePage ul{
+    width:50vw;
+    display:inline-flex;
+    align-items: flex-start;
+    margin-left:10vw;
+  }
+  .recipe .name{
+    font-size:2vw;
+  }
+}
+
+
+@media screen and (min-width:1400px){
+  .recipe{
+    list-style: none;
+    margin: 5vw;
+    width: 20vw;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  .recipeList ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .recipePage ul{
+    width: 50vw;
+    display: inline-flex;
+    align-items: flex-start;
+    margin-left: 10vw;
+  }
+  .recipe .name{
+    font-size: 1vw;
+  }
+  .recipe img{
+    width: 20vw;
+  }
+}
+
+@media screen and (min-width:1700px){
+  .recipe{
+    margin: 5.3vw;
+  }
+
 }
