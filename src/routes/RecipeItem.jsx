@@ -6,7 +6,7 @@ const RecipeItem = ({ recipe }) => {
     <>
       <NavLink to={`/${recipe.id}`} className='link' >
         <Link to={`/${recipe.id}`} className='link'>
-        <li className='recipe'>
+          <li className='recipe'>
             <section className='name'> {recipe.name}</section> <br />
             <img src={recipe.image} alt={recipe.alt} />
           </li>
